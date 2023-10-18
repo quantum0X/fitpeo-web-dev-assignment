@@ -3,6 +3,7 @@ import { FiSearch } from 'react-icons/fi'
 import CurrentStats from './components/minidash/CurrentStats';
 import { Sidebar } from './components/sidebar/Sidebar';
 import Overview from './components/overview/Overview';
+import Customers from './components/customers/Customers';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
           </div>
         </div>
         <CurrentStats />
-        <Overview />
+        <div className=' flex justify-evenly flex-wrap'>
+
+          <Overview />
+          <Customers />
+        </div>
       </div>
     </div>
   );

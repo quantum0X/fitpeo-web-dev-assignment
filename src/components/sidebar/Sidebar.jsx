@@ -67,11 +67,11 @@ export function Sidebar() {
   return (
     <div
       className={
-        " h-screen py-4 px-3 text-gray-100 bg-indigo-950 " +
-        (isHidden ? "w-fit " : "w-[350px] ")
+        "h-screen py-4 px-3 text-gray-100 bg-indigo-950 " +
+        (isHidden ? "w-fit" : "w-[350px] max-sm:w-screen ")
       }
     >
-      <div className="flex px-2 mb-12 items-center text-3xl gap-4">
+      <div className={"flex px-2 mb-12 items-center text-3xl gap-4"}>
         <FaBars className="text-3xl cursor-pointer" onClick={hideDashboard} />
         {!isHidden && <span>Dashboard</span>}
       </div>
