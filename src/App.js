@@ -18,7 +18,7 @@ function App() {
           </div>
         </div>
         <CurrentStats />
-        <div className=' flex justify-evenly flex-wrap'>
+        <div className='flex flex-row max-sm:flex-col max-md:flex-col justify-evenly gap-4'>
 
           <Overview />
           <Customers />

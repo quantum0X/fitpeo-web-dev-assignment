@@ -66,7 +66,7 @@ const data = [
 
 const Overview = () => {
   return (
-    <div className="md:h-fit md:w-fit sm:h-full sm:w-full py-6 px-2 my-2 bg-white rounded-xl overflow-x-scroll">
+    <div className="sm:h-full sm:w-full py-6 px-2 my-2 bg-white rounded-xl overflow-x-scroll">
       {/* heading */}
       <div className="flex justify-between p-2">
         <span className="text-lg text-gray-600 font-medium">
@@ -82,7 +82,7 @@ const Overview = () => {
         </span>
       </div>
       {/* graph */}
-      <div className="h-full justify-between flex items-end gap-2 p-4 ">
+      <div className="h-full justify-between flex items-end gap-2 p-4 mt-6">
         {data.map((bar, i) => (
           <Bar key={i} {...bar} />
         ))}

@@ -34,8 +34,7 @@ export const data = {
 
 const Customers = () => {
   return (
-    // things I would never do:
-    <div className="md:h-fit md:w-fit sm:h-full sm:w-full p-4 my-2 mx-12 rounded-xl bg-white">
+    <div className="md:h-fit md:w-fit sm:h-full sm:w-full p-4 my-2 rounded-xl bg-white">
       <div>
         <div className="text-lg text-gray-600 font-medium">Customer</div>
         <div className="text-sm text-gray-400">customer that buy Products</div>
