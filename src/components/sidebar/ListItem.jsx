@@ -1,11 +1,23 @@
 import React from "react";
-import { TbCircleKeyFilled } from "react-icons/tb";
+import { BiSolidChevronRight } from "react-icons/bi";
 
-export function ListItem({ title, hidden }) {
+export function ListItem({ Icon, title, hidden, isActive }) {
   return (
-    <div className="px-2 py-2 my-2 text-xl bg-red-300 cursor-pointer ">
-      <TbCircleKeyFilled />
-      {!hidden && <span className="ml-2 font-semibold ">{title}</span>}
+    <div
+      className={
+        "flex h-fit px-2 py-2 my-4 text-base items-center cursor-pointer rounded-xl hover:outline hover:outline-2 gap-2 " +
+        (isActive
+          ? "bg-indigo-800 hover:outline-none"
+          : "bg-transparent text-gray-300")
+      }
+    >
+      {Icon}
+      {!hidden && (
+        <span className="ml-2 w-full flex items-center justify-between font-semibold gap-12 pr-2 ">
+          {title}
+          {!isActive && <BiSolidChevronRight />}
+        </span>
+      )}
     </div>
   );
 }
