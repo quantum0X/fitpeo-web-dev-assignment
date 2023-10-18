@@ -7,7 +7,7 @@ function App() {
     <div className="flex">
       <Sidebar />
       <div className='w-full h-screen bg-gray-200 p-4'>
-        {/* <CurrentStats /> */}
+        <CurrentStats />
       </div>
     </div>
   );
