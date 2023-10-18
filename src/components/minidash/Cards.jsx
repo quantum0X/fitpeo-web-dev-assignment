@@ -6,7 +6,7 @@ import { MdAccountBalanceWallet } from "react-icons/md";
 
 export const Earning = ({ profit, loss, amount }) => {
   return (
-    <div className="w-fit h-fit flex item-center fit bg-white p-3 rounded-xl">
+    <div className="w-[240px] h-fit flex item-center fit bg-white p-3 rounded-xl">
       <div className="h-16 w-16 flex justify-center rounded-full item-center bg-red-300 my-auto p-3">
         <AiOutlineDollar style={{ fontSize: "40px" }} />
       </div>
@@ -41,7 +41,7 @@ export const Earning = ({ profit, loss, amount }) => {
 
 export const Orders = ({ profit, loss, amount }) => {
   return (
-    <div className="w-fit h-fit flex item-center fit bg-white p-3 rounded-xl">
+    <div className="w-[240px] h-fit flex item-center fit bg-white p-3 rounded-xl">
       <div className="h-16 w-16 flex justify-center rounded-full item-center bg-red-300 my-auto p-3">
         <CgNotes style={{ fontSize: "40px" }} />
       </div>
@@ -76,7 +76,7 @@ export const Orders = ({ profit, loss, amount }) => {
 
 export const TotalSales = ({ profit, loss, amount }) => {
   return (
-    <div className="w-fit h-fit flex item-center fit bg-white p-3 rounded-xl">
+    <div className="w-[240px] h-fit flex item-center fit bg-white p-3 rounded-xl">
       <div className="h-16 w-16 flex justify-center rounded-full item-center bg-red-300 my-auto p-3">
         <HiOutlineShoppingBag style={{ fontSize: "40px" }} />
       </div>
@@ -111,7 +111,7 @@ export const TotalSales = ({ profit, loss, amount }) => {
 
 export const Balance = ({ profit, loss, amount }) => {
   return (
-    <div className="w-fit h-fit flex item-center fit bg-white p-3 rounded-xl">
+    <div className="w-[240px] h-fit flex item-center fit bg-white p-3 rounded-xl">
       <div className="h-16 w-16 flex justify-center rounded-full item-center bg-red-300 my-auto p-3">
         <MdAccountBalanceWallet style={{ fontSize: "40px" }} />
       </div>
