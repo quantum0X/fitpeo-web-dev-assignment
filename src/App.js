@@ -4,6 +4,7 @@ import CurrentStats from './components/minidash/CurrentStats';
 import { Sidebar } from './components/sidebar/Sidebar';
 import Overview from './components/overview/Overview';
 import Customers from './components/customers/Customers';
+import ProductSell from './components/sells/ProductSell';
 
 function App() {
   return (
@@ -19,9 +20,11 @@ function App() {
         </div>
         <CurrentStats />
         <div className='flex flex-row max-sm:flex-col max-md:flex-col justify-evenly gap-4'>
-
           <Overview />
           <Customers />
+        </div>
+        <div>
+          <ProductSell />
         </div>
       </div>
     </div>
